@@ -79,6 +79,12 @@ ol .alpha {
     width: 100%;
 }
 
+a {
+    color: #577399;
+    font-weight: bold;
+}
+
 footer {
     padding-left: 5px;
+    font-size: 0.75em;
 }
