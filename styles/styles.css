@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Rammetto+One');
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #495867;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #BDD5EA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    color: #F7F7FF;
+}
+
+#active {
+    color: #FE5F55;
+}
+
+body{
+    font-family: 'Open Sans',serif;
+    color: #43505E;
+ }
+ 
+
+/* Main content */
+article {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+    width: 75%;
+    padding-left: 15px;
+}
+
+h1, h2 {
+    font-family: 'Rammetto One', cursive;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #577399;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-transform: lowercase;
+    padding-top: 15px;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+
+ol .alpha {
+    list-style-type: lower-alpha;
+}
+
+
+
+#43505E
+#577399
+#BDD5EA
+#F7F7FF
+#FE5F55
