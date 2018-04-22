@@ -5,16 +5,17 @@ html, body {
     margin: 0;
 }
 
-/* The navigation bar */
+/****** The navigation bar ******/
 .navbar {
     overflow: hidden;
-    background-color: #495867;
+    background-color: #330033;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     font-weight: bold;
 }
 
+/* Unordered list styling in nav */
 .navbar ul {
     list-style-type: none;
 }
@@ -23,7 +24,7 @@ html, body {
 .navbar a {
     float: left;
     display: block;
-    color: #BDD5EA;
+    color: #CCCCFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,18 +32,22 @@ html, body {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-    color: #F7F7FF;
+    color: #CC99CC;
 }
 
 #active {
-    color: #FE5F55;
+    color: #FFF;
 }
 
+/****** Body and content styling ******/
 body{
-    font-family: 'Open Sans',serif;
-    color: #43505E;
+    font-family: 'Open Sans', serif;
+    color: #31333B;
  }
  
+ .container {
+    width: 100%;
+}
 
 /* Main content */
 article {
@@ -51,39 +56,43 @@ article {
     padding-left: 15px;
 }
 
+/* Ordered list styling */
+ol .alpha {
+    list-style-type: lower-alpha;
+}
+
+/* Link styling */
+a {
+    color: #577399;
+    font-weight: bold;
+}
+
+
+/**** Heading styling ****/
 h1, h2 {
     font-family: 'Rammetto One', cursive;
 }
 
 h1 {
     text-transform: uppercase;
-    color: #577399;
-    font-size: 1.5em;
+    color: #339999;
+    font-size: 3.5em;
 }
 
 h2 {
     text-transform: lowercase;
+    color: #669999;
     padding-top: 15px;
 }
 
 h3 {
+    text-transform: uppercase;
     padding-top: 20px;
+    color: #336666;
 }
 
 
-ol .alpha {
-    list-style-type: lower-alpha;
-}
-
-.container {
-    width: 100%;
-}
-
-a {
-    color: #577399;
-    font-weight: bold;
-}
-
+/**** Footer styling ****/
 footer {
     padding-left: 5px;
     font-size: 0.75em;
