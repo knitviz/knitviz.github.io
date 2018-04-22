@@ -69,6 +69,30 @@ html, body {
 }
 
 
+/****** Secondary nav ******/
+.second-nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.second-nav li{
+    display:inline;
+}
+.second-nav a{
+    display:inline-block;
+    padding:10px;
+}
+
+#second-nav-active {
+    text-transform: uppercase;
+    color: #330033;
+    text-decoration: none;
+}
+
+
 /****** Body and content styling ******/
 body {
     font-family: 'Open Sans', serif;
@@ -89,6 +113,10 @@ article {
     margin: 100px auto; /* Add a top margin to avoid content overlay */
     width: 75%;
     padding-left: 15px;
+}
+
+section {
+    padding-top: 15px;
 }
 
 /* Ordered list styling */
