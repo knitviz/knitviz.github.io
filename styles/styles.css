@@ -5,47 +5,82 @@ html, body {
     margin: 0;
 }
 
-/****** The navigation bar ******/
-.navbar {
-    overflow: hidden;
+/****** Navigation styling ******/
+.nav {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
     background-color: #330033;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    font-weight: bold;
+    /* Bring the nav above everything else--uncomment if needed.
+    position: relative;
+    z-index: 5;
+    */
 }
-
-/* Unordered list styling in nav */
-.navbar ul {
-    list-style-type: none;
-}
-
-/* Links inside the navbar */
-.navbar a {
+.nav li {
     float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.nav a {
     display: block;
-    color: #CCCCFF;
-    text-align: center;
     padding: 14px 16px;
+    color: #CCCCFF;
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-    color: #CC99CC;
+
+/*--- DROPDOWN ---*/
+.nav ul {
+    background-color: #FFF; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background: rgba(51,0,51,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
+    position: absolute;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+}
+.nav ul li {
+    float: none;
+}
+.nav ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+}
+.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background-color: #CC99CC;
+    color: #330033;
+    text-decoration: underline;
+}
+.nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+
+/* Hover states */
+.nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background-color: #BAABBD;
 }
 
 #active {
     color: #FFF;
 }
 
+
 /****** Body and content styling ******/
-body{
+body {
     font-family: 'Open Sans', serif;
     color: #31333B;
- }
- 
- .container {
+}
+
+.intro {
+    color: #330033;
+    font-size: 1.5em;
+}
+
+.container {
     width: 100%;
 }
 
@@ -97,3 +132,5 @@ footer {
     padding-left: 5px;
     font-size: 0.75em;
 }
+
+/* Much thanks to CSSWizardry.com for a pure HTML & CSS dropdown menu. */
