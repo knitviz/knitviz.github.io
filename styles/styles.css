@@ -154,6 +154,14 @@ h3 {
     color: #336666;
 }
 
+img {
+    width:100%;
+    border:5px solid black;
+}
+
+.sm-img {
+    width: 50%;
+}
 
 /**** Footer styling ****/
 footer {
