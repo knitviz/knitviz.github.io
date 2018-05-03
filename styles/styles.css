@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Titan+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Titan+One|Black+Han+Sans');
 
 html, body {
     padding: 0;
@@ -134,7 +134,7 @@ a {
 
 /**** Heading styling ****/
 h1, h2 {
-    font-family: 'Titan One', cursive;
+    font-family: 'Titan One', 'Black Han Sans', cursive;
 }
 
 h1 {
@@ -146,12 +146,12 @@ h1 {
 h2 {
     text-transform: lowercase;
     color: #669999;
-    padding-top: 2.5em;
+    padding-top: 1.25em;
 }
 
 h3 {
     text-transform: uppercase;
-    padding-top: 1.75em;
+    padding-top: 1.25em;
     color: #336666;
 }
 
