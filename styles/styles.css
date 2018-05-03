@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Titan+One');
 
 html, body {
     padding: 0;
@@ -96,6 +96,7 @@ html, body {
 /****** Body and content styling ******/
 body {
     font-family: 'Open Sans', serif;
+    font-size: 1.25em;
     color: #31333B;
 }
 
@@ -133,7 +134,7 @@ a {
 
 /**** Heading styling ****/
 h1, h2 {
-    font-family: 'Rammetto One', cursive;
+    font-family: 'Titan One', cursive;
 }
 
 h1 {
@@ -145,18 +146,18 @@ h1 {
 h2 {
     text-transform: lowercase;
     color: #669999;
-    padding-top: 15px;
+    padding-top: 2.5em;
 }
 
 h3 {
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 1.75em;
     color: #336666;
 }
 
 img {
     width:100%;
-    border:5px solid black;
+    border:2px solid black;
 }
 
 .sm-img {
@@ -165,8 +166,11 @@ img {
 
 /**** Footer styling ****/
 footer {
-    padding-left: 5px;
+    border-top: 1px solid #E0E0E0;
     font-size: 0.75em;
+    padding: 20px 0;
+    margin: 2px auto 0 auto;
+    text-align: center;
 }
 
 /* Much thanks to CSSWizardry.com for a pure HTML & CSS dropdown menu. */
