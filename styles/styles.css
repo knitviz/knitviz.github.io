@@ -102,11 +102,21 @@ body {
 
 .intro {
     color: #330033;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .container {
     width: 100%;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+#right {
+    overflow: hidden;
 }
 
 /* Main content */
@@ -178,7 +188,14 @@ h3 {
 }
 
 .card-action a {
+    color: #339999;
     text-decoration: none;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /**** Footer styling ****/
