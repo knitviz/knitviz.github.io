@@ -155,13 +155,30 @@ h3 {
     color: #336666;
 }
 
-img {
-    width:100%;
-    border:2px solid black;
-}
-
 .sm-img {
     width: 50%;
+}
+
+.surround {
+    border-style: solid;
+    border-width: 1px #31333B;
+}
+
+.card {
+    max-width: 450px;
+    box-shadow: 0 4px 8px 0 #BAABBD;
+    padding: 2px 16px;
+    margin: 20px;
+}
+
+.card-action {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.card-action a {
+    text-decoration: none;
 }
 
 /**** Footer styling ****/
