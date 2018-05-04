@@ -12,7 +12,7 @@ html, body {
     margin-top: 0px;
     margin-bottom: 10px;
     width: 100%;
-    background-color: #330033;
+    background-color: #270027;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     /* Bring the nav above everything else--uncomment if needed.
@@ -28,7 +28,7 @@ html, body {
 .nav a {
     display: block;
     padding: 14px 16px;
-    color: #CCCCFF;
+    color: #C2B3C2;
     text-decoration: none;
 }
 
@@ -51,8 +51,8 @@ html, body {
     left: 0; /* Bring back on-screen when needed */
 }
 .nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    background-color: #CC99CC;
-    color: #330033;
+    background-color: #704D70;
+    color: #F3E6F3;
     text-decoration: underline;
 }
 .nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
@@ -61,11 +61,11 @@ html, body {
 
 /* Hover states */
 .nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-    background-color: #BAABBD;
+    background-color: #330033;
 }
 
 #active {
-    color: #FFF;
+    color: #FAF3FA;
 }
 
 
