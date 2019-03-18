@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Montserrat:400,500,600,700');
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #E5E3E7;
+    margin: 10px;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+    padding-top: 30px;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#index-page {
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        "he"
+        "r"
+        "ia"
+        "d"
+        "f";
+}
+
+#nav-pages {
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        "h"
+        "a1"
+        "a2"
+        "a3"
+        "f";
+}
+
+#project-pages {
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        "h"
+        "m"
+        "c"
+        "f";
+}
+
+#detail-pages {
+    height: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        "h"
+        "m"
+        "c"
+        "f";
+}
+
+@media (min-width: 750px) {
+    #index-page {
+        grid-gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto-fill 75vh;
+        grid-template-areas:
+            "he he he"
+            "r ia d"
+            "f f f";
+    }
+
+    #nav-pages {
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto-fill 75vh;
+        grid-template-areas:
+            "h h"
+            "a1 a1"
+            "a2 a3"
+            "f f";
+    }
+
+    #project-pages {
+        grid-gap: 3px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto-fill 75vh;
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "m m m m c c c c c c c c"
+            "f f f f f f f f f f f f";
+    }
+
+    #detail-pages {
+        grid-gap: 3px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto-fill 75vh;
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            ". m m m c c c c c c c c"
+            "f f f f f f f f f f f f";
+    }
+}
+
+.hero {
+    grid-area: he;
+    background-color: #3D3A4B;
+    color: #D3C0CD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    padding: 50px;
+}
+
+.hero a:link {
+    color: #D3C0CD;
+    font-weight: 700;
+}
+
+.hero a:hover {
+    color: #D81E5B;
+    font-weight: 700;
+}
+
+.hero a:visited {
+    color: #D3C0CD;
+    font-weight: 700;
+}
+
+.lg-nav {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #F6F5F7;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 20px 0;
+    display: block;
+    position: relative;;
+}
+
+.lg-nav a:any-link {
+    color: #0E070E;
+    position: relative;
+    z-index: 1;
+}
+
+.lg-nav a:hover {
+    color: #D81E5B;
+    text-shadow: 0 0 10px #3D3A4B;
+}
+
+.lg-nav p {
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+#research {
+    grid-area: r;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_in_thought_gjsf.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+#ia {
+    grid-area: ia;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_ia-cover.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+#design {
+    grid-area: d;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_wireframing_nxyi.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+.footer {
+    grid-area: f;
+    text-align: center;
+    font-size: 0.95em;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FBF9FA;
+}
+
+.header {
+    grid-area: h;
+    background-color: #3D3A4B;
+    color: #D81E5B;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.header a:any-link {
+    color: #D81E5B;
+    font-weight: 500;
+}
+
+#survey {
+    grid-area: a1;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_survey-platform.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+#persona {
+    grid-area: a2;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_persona-research.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+#library {
+    grid-area: a3;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_library-redesign.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+#arduino {
+    grid-area: a2;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_ia-specific.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+#mobile {
+    grid-area: a2;
+    text-align: center;
+
+    /* Background Image */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%), url(undraw_lunch-money.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+#menu {
+    grid-area: m;
+}
+
+#menu ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.active {
+    font-weight: 700;
+}
+
+#menu a:link {
+    color: #3D3A4B;
+}
+
+#menu a:hover,
+a:active {
+    color: #D81E5B;
+}
+
+#menu a:visited {
+    color: #3D3A4B;
+}
+
+#content {
+    grid-area: c;
+    background-color: #FBF9FA;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+dd {
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding-top: 5px;
+}
+
+.lg-img {
+    object-fit: cover;
+    width: 100%
+}
+
+.md-img {
+    object-fit: cover;
+    width: 50%
+}
+
+.sm-img {
+    object-fit: cover;
+    width: 25%
+}
+
+blockquote {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 3px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #3D3A4B;
+}
+
+thead {
+    font-size: 1.2em;
+    border: 2px solid #3D3A4B;
+}
+
+.lt-head {
+    font-weight: 300;
+    font-size: 0.80em;
+}
+
+th {
+    border: 1px solid #3D3A4B;
+    padding-top: 20px;
+}
+
+table .info {
+    border: 1px solid #3D3A4B;
+    text-align: center;
+}
+
+table .left-head {
+    text-align: left;
+    padding: 10px;
+}
+
+caption {
+    font-size: 0.80em;
+    padding: 10px;
+    caption-side: bottom;
+    color: #3D3A4B;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #E5E3E7;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #D3C0CD;
+}
+
+table {
+    background-color: #E5E3E7;
+}
+
+table .sub-head {
+    font-weight: 700;
+    font-size: 1.15em;
+    border: 1.5px solid #3D3A4B;
+    padding: 10px 2px;
+    background: #F6F5F7;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-times {
+    color: red;
+}
+
+.fa-heart {
+    color: #D81E5B;
+}
